@@ -1,0 +1,106 @@
+ /*
+Theme Name: Agile Toulouse 2015 -héritié de twentythirteen child _ 
+Author: Alban MARTEL 2015
+Author URI: 
+Template: twentythirteen
+Description: Agile Toulouse 2015 est un thème enfant de twentythirteen child 
+*/
+ 
+@import url("../twentythirteen/style.css");
+
+
+
+@media screen and (max-width:767px){
+
+	body{
+		font-size:100%;
+	}
+		
+	span.line-abs {
+	    background: none repeat scroll 0% 0% #333;
+	    height: 2px;
+	    width: 2%;
+	    display: none;
+	}
+	
+	.site-description {
+	    font: italic 300 24px "Source Sans Pro",Helvetica,sans-serif;
+	    margin: 0px;
+	    font-size: 100%;
+	}
+	
+
+}
+
+
+
+.site {
+    background-color: #FFF;
+    border-left: none;
+    border-right: none;
+    margin: 0px auto;
+    max-width: none;
+    width: 100%;
+}
+
+
+.navbar {
+    background-color: #F7F5E7;
+    margin: 0px;
+    max-width: none;
+    width: 150%;
+}
+
+.main-navigation {
+    clear: both;
+    margin: 0px auto;
+    max-width: 1080px;
+    min-height: 45px;
+    position: relative;
+    width: 70%;
+}
+
+
+#titrelien {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+#masthead {
+    background: #FAF8EE;
+}
+
+.site-title {
+    font-size: 300%;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#centering_banner {
+    width: 45%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-header .search-form {
+    position: relative;
+    right: 0px;
+    top: 0px;
+}
+
+
+.entry-header, .entry-content, .entry-summary, .entry-meta, .comment-respond {
+    margin: 0px auto;
+    max-width: 904px;
+    width: 100%;
+}
+
+html, button, input, select, textarea {
+    font-family: Helvetica,sans-serif, "Source Sans Pro",;
+}

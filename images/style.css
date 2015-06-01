@@ -1,0 +1,461 @@
+ /*
+Theme Name: agiletoulouse
+Author: Alban MARTEL
+Author URI: 
+Template: twentythirteen
+Description: Personnalisation du thème twentythirteen !
+*/
+ 
+.images {min-width : 200px; width:100%; height: auto;}
+
+/* MOBILE */
+
+@media screen and (max-width:767px) {
+  body {
+      background: #F8F8F8;
+      font-family: "Open Sans",sans-serif;
+      font-size: 1em;
+      line-height: 1.5em;
+      color: #333;
+  }
+
+  #liens { display: none ; }
+
+
+  button:focus #liens{
+      background : white;
+      width: 100%;
+      height:100%;
+      top: 0px;
+      left: 0px;
+      font-size: 2em;
+      display: block;
+  }
+
+  .menu {
+      width: 50px;
+      height: 50pt;
+      background-image: url("images/BoutonMobile.svg");
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      position: fixed;
+      right: 20px;
+      z-index:1;      
+  }
+  
+
+  #lienmenu{
+      display:none;
+  }
+
+
+  .menu:hover {
+      background: white;
+      position: fixed;
+      right: 0px;
+      width: 100px;
+      height: auto;
+      padding: 20px;
+      top: 20px;
+  }
+
+  .menu:hover #lienmenu{
+    display:block;
+  }
+
+  .menu:hover #lienmenu{
+    display:block;
+  }
+
+  #page {
+  }
+
+
+  .wp-svg {
+      width: 40px;
+      height: 35px;
+      max-width: 100%;
+      min-width: 0px;
+  }
+
+  .wpcf7-captchac .wpcf7-captcha-captcha {
+    height:24px;
+    width:72px;
+  }
+}
+
+@media screen and (min-width:768px) { 
+
+body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-family:inherit;
+	font-size:100%;
+	font-style:inherit;
+	font-weight:inherit;
+	vertical-align:baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+	display:block;
+}
+
+body {
+	line-height:1;
+}
+
+ol, ul {
+	list-style:none;
+}
+
+blockquote, q {
+	quotes:none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content:'';
+	content:none;
+}
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+
+/* BODY AND CONTAINER */
+
+body {
+    background: #F8F8F8;
+    font-family: "Open Sans",sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #333;
+}
+#container {width:100%; padding:0; margin:0; background:none; text-align:left; word-wrap:break-word;}
+#content {
+    max-width: 880px;
+    margin: auto;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+
+#content:after {content:''; display:block; clear:both;}
+
+#lienmenu {color:#f26535;}
+
+.twitter-widget-0 , .twitter-timeline { width : 1000px; }
+
+
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {padding-bottom: 20px;}
+h1 {font-size:3.0em; line-height:1.2em;}
+h2 {font-size:2.5em; line-height:1.2em; padding-bottom: 30px;}
+h3 {font-size:2.0em; line-height:1.5em;}
+h4 {font-size:1.5em; line-height:1.5em;}
+h5 {font-size:1.0em; line-height:2em;}
+h6 {font-size:0.75em; line-height:2em;}
+
+
+/* LINKS AND HTML TAGS */
+a {text-decoration:none; color:#f26535;}
+a:hover {text-decoration:underline;}
+
+strong, b {font-weight:bold;}
+small {font-size:0.75em;}
+big {font-size:1.5em;}
+sub {vertical-align:sub; font-size:0.9em;}
+sup {vertical-align:super; font-size:0.9em;}
+ins, mark {font-weight:bold; background:none; color:#f26535;}
+cite, em, abbr, acronym {font-style:italic;}
+code, pre {margin:10px 0; padding:5px 10px; display:block; border:1px solid #ccc; word-wrap:break-word;}
+blockquote, q {margin:10px 0; padding:0 0 0 20px; display:block; font-size:1.2em; line-height:1.5em; font-style:italic; border-left:2px solid #f26535;}
+address {margin:10px 0; padding:0 0 0 20px; display:block; font-size:1.2em; line-height:1.5em; border-left:2px solid #333;}
+p {margin:0 0 10px; text-align:justify;}
+
+
+/* TABLE AND LISTS */
+table {margin:10px 0; border-collapse:collapse;}
+table, th, td {border: 1px solid #ccc; padding:5px 10px;}
+table th {font-weight:bold;}
+
+ul {list-style:square; margin:2px 0 2px 0;}
+ol {list-style:decimal; margin:2px 0 2px 0;}
+li {margin:0 0 0 20px;}
+dl {margin:10px 0;}
+dt {font-weight:bold;}
+dd {margin:0 0 0 20px;}
+
+
+/* INPUTS */
+input, select, textarea {-webkit-appearance:none; -moz-appearance:none; border:1px solid #ccc; padding:2px 5px; background:none; font-size:1em; font-family:'Open Sans', sans-serif;}
+input[type="submit"], input[type="reset"] {cursor:pointer;	border:0; padding:2px 5px; background:#f26535; color:#fff;}
+input[type="submit"]:hover, input[type="reset"]:hover {background: #333;}
+input[type="checkbox"]{-webkit-appearance:checkbox; -moz-appearance:checkbox;}
+input[type="radio"]{-webkit-appearance:radio; -moz-appearance:radio;}
+select {max-width:100%; -webkit-appearance:menulist; -moz-appearance:menulist;}
+
+
+
+/* HEADER */
+#header-container {width:100%; color:black;}
+#header-container:after {content:''; display:block; clear:both;}
+
+#header {margin:0 auto 0; padding:10px 0; text-align:center; background:white}
+#header:after {content:''; display:block; clear:both;}
+
+
+/* HEADER LOGO */
+#header .logo {width:100%;}
+#header .logo h1 a {font-size:1.5em; color:black;}
+#header .logo h1 a:hover {text-decoration:none; color:black;}
+#header .logo h3 {padding:10px 0 0; color:black;}
+
+
+.menu {
+    margin: 0px auto;
+    padding: 10px 0px;
+    text-align: center;
+    background: none repeat scroll 0% 0% #FFF;
+    width: 100%;
+    height: 80px;
+}
+
+.menu a {
+    
+    color: #000;
+    margin: 0px 50px;
+}
+
+#lienmenu {
+    display: inline-block;
+    margin: 15px 40px;
+}
+
+#liens {
+
+}
+
+.logo a:link{
+    color:black;
+}
+ 
+.logo a:visited{
+    color:black;
+}
+ 
+.logo a:hover{
+    color:black;
+}
+ 
+.logo a:active{
+    color:black;
+}
+
+#banniere {
+    text-align: center;
+    width: 50%;
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a #banniere  {
+    color: #FFF;
+}
+
+.icone {
+    width: 50px;
+    height: 80px;
+    background-image: url("images/OvaleAgileToulouse.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: fixed;
+    right: 80px;
+    top: 80px; 
+}
+
+a .iconeagile {
+    width: 160px;
+    height: 160px;
+    background-image: url("images/logoAgileToulouse.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    float: left;
+    margin: 10px;
+}
+
+
+.iconeagile1 {
+    width: 100px;
+    height: 72pt;
+    background-image: url("images/logoAgileToulouse.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin-left: 21%;
+    z-index: 1;
+    top: 0px;
+    position: absolute;
+}
+
+
+#titrepage {
+}
+
+#titrelien {
+    font-family: "gotham rounded",arial,sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 0px #FFF;
+    color: #333;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#titresiteetslogan {
+    color: #FFF;
+    position: relative;
+    top: -440px;
+    text-align: center;
+}
+
+span.line-abs {
+    background: none repeat scroll 0% 0% #333;
+    height: 2px;
+    width: 2%;
+    display: inline-block;
+}
+
+/* HEADER IMAGE */
+#header .header-img {width:100%; height:auto;}
+
+.images {width:100%; height: auto;}
+
+.menu .current_page_item > a, .menu .current_page_parent > a {text-decoration:underline;}
+.menu a , .menu {
+    display: inline-block;
+}
+
+
+
+
+/* HOMEPAGE WIDGET AREA */
+#header-widgets {max-width:880px; margin:0 auto 0; padding:0 40px; background:#f8f8f8; border-bottom:3px solid #f26535;}
+#header-widgets:after {content:''; display:block; clear:both;}
+
+.home-left {float:left; width:48%; word-wrap:break-word;}
+.home-right {float:right; width:48%; word-wrap:break-word;}
+
+
+/* PAGE */
+.page-title {padding:0 0 10px;}
+.pagelink {clear:both; margin:20px 0 10px;}
+.edit-link {display:block; clear:both; margin:10px 0 0; padding:5px; border:1px solid #f26535; text-align:center;}
+
+
+/* POST */
+.post-title {padding:0;}
+.post-title a:hover {color:#333; text-decoration:none;}
+.sticky {text-align:center; clear:both; color:#fff; background:#f26535; margin:0 0 10px; padding:5px;}
+.postmetadata {clear:both; margin:20px 0; padding:5px 10px; color:#333; background:#eee;}
+.more {clear:both; margin:20px 0; padding:0 0 20px; border-bottom:2px solid #eee;}
+.more:after {content:''; display:block; clear:both;}
+a.readmore {float:right; padding:2px 10px; background:#f26535; color:#fff; text-decoration:none;}
+a.readmore:hover {background:#333; text-decoration:none;}
+.post-nav {display:block; clear:both;}
+.post-nav:after {content:''; display:block; clear:both;}
+.nav-prev {float:right; padding:5px 0;}
+.nav-next{float:left; padding:5px 0;}
+
+
+/* IMAGE AND VIDEO */
+embed, iframe, img, object, video {max-width:100%;}
+
+
+img.alignright {float:right; margin:0.4em 0 0.4em 1em;}
+img.alignleft {float:left; margin:0.4em 1em 0.4em 0;}
+img.aligncenter {display:block; margin:0.4em auto 0.4em auto;}
+.alignright {float:right; margin:0.4em 0 0.4em 1em;}
+.alignleft {float:left; margin:0.4em 1em 0.4em 0;}
+.aligncenter {display:block; margin:0.4em auto 0.4em auto;}
+
+.wp-post-image, .single-image {float:left; margin:0.4em 1em 0.4em 0;}
+
+.wp-caption {background:none; max-width:100%;}
+.wp-caption-text {text-align:center; word-wrap:break-word;}
+
+.gallery dl, .gallery dt, .gallery dd {margin:0; padding:0;}
+.gallery-caption {background:none; max-width:100%;}
+.gallery-caption-text {text-align:center; word-wrap:break-word;}
+
+
+/* SEARCHFORM */
+.search-form {padding:10px 0;}
+.search-field {width:50%; margin:0 5px 0 0;}
+.screen-reader-text {display:none;}
+
+
+/* COMMENTS */
+#comments {clear:both; word-wrap:break-word;}
+#comments .comment-list {background:#fff; border:1px solid #ddd; font-weight:normal; margin:20px 0; padding:0 20px 0 10px;}
+#comments .comment-list ol {list-style:none;}
+#comments .comment-list li {list-style:none; margin:0 0 0 10px;}
+.comment-body {border-left:2px solid #f26535; padding:0 0 0 15px; margin:20px 0;}
+.comment-notes, .form-allowed-tags {font-size:0.75em; padding:5px 0;}
+.comments-title, .comment-reply-title, .no-comments {clear:both; font-size:1.5em;} 
+.bypostauthor {font-style:italic;}
+
+#respond {padding:0; margin:0; clear:both;}
+#commentform label {padding:0 0 5px; display:block;}
+#commentform textarea, #commentform input {width:90%; padding:2px 5px;}
+#commentform input[type="submit"] {width:9em; padding:2px 5px;} 
+
+
+/* WIDGETS */
+.widgettitle {background:#eee; color:#333; padding:5px 10px; margin:20px 0 15px;}
+.widget {padding:0 0 10px;}
+
+
+
+/* FOOTER */
+#footer {max-width:880px; margin:0 auto 0; padding:20px 40px; background:#f26535; color:#fff;display:none;}
+#footer:after {content:''; display:none; clear:both;}
+#footer .site-info {text-align:center; display:none;clear:both;}
+#footer .site-info a {color:#fff;display:none;}
+
+/* FOOTER */
+/*#footer {max-width:880px; margin:0 auto 0; padding:20px 40px; background:#f26535; color:#fff;} */
+/* #footer:after {content:''; display:block; clear:both;} */
+/* #footer .site-info {text-align:center; clear:both;} */
+/* #footer .site-info a {color:#fff;} */
+
+
+/* FOOTER WIDGET AREA */
+#recherche{position:absolute; right: 0px; width: 340px;  max-width:880px; margin:0 auto 0; padding:0 5px; color:#333; background:#f8f8f8; word-wrap:break-word; }
+/*#recherche {position:absolute; max-width:880px; margin:0 auto 0; padding:0 5px; color:#333; background:#f8f8f8; border-top:3px solid #f26535; word-wrap:break-word; width: 10%; right: 0px;}*/
+
+
+#recherche:after {content:''; display:block; clear:both;}
+
+.footer-left {float:left; width:48%; word-wrap:break-word;}
+.footer-right {float:right; width:48%; word-wrap:break-word;}
+
+.corpscommentaires {
+    font-style: italic;
+    background: none repeat scroll 0% 0% white;
+    color: gray;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    height: auto;
+    font-size: 1vw;
+}
+}
